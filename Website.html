@@ -5,30 +5,41 @@
     <title>Engineer Robert Howell</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        heading {
-            background-color: aqua;
+        * {
+            background-color: #F0F2F3;
         }
 
         body {
             font-family: Helvetica, sans-serif;
+            
         }
 
         #header {
             font-family: Arial, Helvetica, sans-serif;
             font-size: 32px;
-            color: #0F5B9E;
+            color: white;
             text-align: center;
+            font-weight: bold;
+            background-image: linear-gradient(to bottom right, teal, purple);
+            padding: 1% 0% 1% 0%;
+            margin: 0% 0% 0% 0%;
+
+            
         }
 
-        p.bio {
+        .bio {
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 16px
+            font-size: 16px;
+        
         }
 
         #prof {
             width: 346px;
             height: 518px;
             float: left;
+            border-radius: 40px 40px 40px 40px;
+            border: solid;
+            border-color: teal;
         }
 
         .title {
@@ -36,24 +47,89 @@
             font-size: 24px;
             color: #0F5B9E;
             text-align: center;
+            font-weight:bold;
+
         }
 
         .column {
             float: left;
             width: 33%;
+            background-color: #F0F2F3;
         }
 
         .left {
             width: 25%;
-            padding: 5% 0% 0% 3%;
+            padding: 3% 0% 1% 3%;
         }
 
         .middle {
-            padding: 1.5% 3% 0% 0%;
+            padding: 0% 3% 5% 0%;
+
         }
 
         .right {
-            padding: 1.5% 3% 0% 0%;
+            padding: 0% 3% 5% 0%;
+        }
+
+        .job{
+            float:left;
+        }
+
+        .dates{
+            float:right;
+        }
+        
+        .duties{
+            float:left;
+        }
+        footer {
+            float:left;
+            width:100%;
+            position:fixed;
+            left: 0;
+            bottom: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            background-image: linear-gradient(to bottom right, teal, purple);
+            padding: 0% 0% 0% 0%;
+            margin: 0% 0% 0% 0%;
+        }
+
+        #socials {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            color: black;
+            font-weight: bold;
+            
+        }
+        .icon{
+            width: 2%;
+            height: 2%;
+            background-color:transparent;
+        }
+
+        #icon-list {
+            left: 0;
+            bottom: 0;
+            display: inline;
+        }
+        
+        /* width */
+        ::-webkit-scrollbar {
+            width: 10px;
+            padding: 0px 0px 0px 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            border-radius: 10px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background-image: linear-gradient(to bottom, teal, purple);
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -67,7 +143,7 @@
     <div class="column middle">
         <h2 class="title">Short Biography</h2>
         <p class="para">
-            I was born on November 29 <sup>th</sup> 1997 in Camden, New Jersey.
+            I was born on November 29 <sup>th</sup>, 1997 in Camden, New Jersey.
             I grew up in a small town named Woodstown, in Salem county. My high school was small, my graduating class was around 250 students.
             <br />
             At an early age I was always fascinated by machinery and technology, namely how they functioned. I would spend afternoons taking apart old clocks and radios and examining
@@ -101,7 +177,8 @@
     </div>
     <div class="column right">
         <h2 class="title">Work History</h2>
-        <p class="job">NAVAL SEA SYSTEMS COMMAND (NAVSEA)<br /> HVAC ENGINEER CO-OP <br /> <abbr date="September">Sept. </abbr> 2019 to <abbr date="March">Mar.</abbr> 2020</p> <!--Need to add Dates of employment in box over here-->
+        <p class="job">NAVAL SEA SYSTEMS COMMAND (NAVSEA)<br /> HVAC ENGINEER CO-OP</p> 
+        <p class="dates"><abbr date="September">Sept. </abbr> 2019 to <abbr date="March">Mar.</abbr> 2020</p> 
         <ul class="duties">
             <li>Performed diagnostics and troubleshot error codes to suggest repair solutions to crew for multiple ship</li>
             <li>Developed a user-friendly application that automated the process of retrieving results from an online database</li>
@@ -110,7 +187,8 @@
             <li>Converted physical reports to a digital format, stored, and organized them into a navigable library</li>
         </ul>
 
-        <p class="job">DORMAN PRODUCTS<br /> PRODUCT ENGINEER CO-OP <br /> <abbr date="September">Sept. </abbr> 2018 to <abbr date="March">Mar.</abbr> 2019</p> <!--Need to add Dates of employment in box over here-->
+        <p class="job">DORMAN PRODUCTS<br /> PRODUCT ENGINEER CO-OP </p>
+        <p class="dates"><abbr date="September">Sept. </abbr> 2018 to <abbr date="March">Mar.</abbr> 2019</p> 
         <ul class="duties">
             <li>Supported the Valve Covers Product Engineering Team in the development, review, and approval processes of automotive parts</li>
             <li>Used a variety of testing equipment and power tools to measure, build, or deconstruct assemblies</li>
@@ -119,7 +197,8 @@
             <li>Designed a thermostat housing product in Solidworks using hand measurements of an existing model and ideal dimensions</li>
         </ul>
 
-        <p class="job">PHILADELPHIA INTERNATIONAL AIRPORT (PHL)<br /> ENVIRONMENTAL ENGINEER CO-OP <br /> <abbr date="September">Sept. </abbr> 2017 to <abbr date="March">Mar.</abbr> 2018</p> <!--Need to add Dates of employment in box over here-->
+        <p class="job">PHILADELPHIA INTERNATIONAL AIRPORT (PHL)<br /> ENVIRONMENTAL ENGINEER CO-OP </p>
+        <p class="dates"><abbr date="September">Sept. </abbr> 2017 to <abbr date="March">Mar.</abbr> 2018</p> 
         <ul class="duties">
             <li>Conducted inspections on work sites and construction equipment</li>
             <li>Collected water and soil samples for quality testing to verify compliance with federal regulations</li>
@@ -128,6 +207,21 @@
             <li>Modeled building interiors utilizing CAD</li>
         </ul>
     </div>
+            <footer>
+                My social media
+                <br />
+                <a href="https://github.com/gordyhall34">
+                    <img class="icon" src="D:\Documents\Robert_Howell_Website\images/Git.png" />
+                </a>
+                <a href="https://www.instagram.com/robhow34/">
+                    <img class="icon" src="D:\Documents\Robert_Howell_Website\images/Insta.png" />
+                </a>
+                <a href="https://www.linkedin.com/in/robert-howell-16780a138/">
+                    <img class="icon" src="D:\Documents\Robert_Howell_Website\images/Lin.png" />
+                </a>
+            </footer>
+        
+    
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
