@@ -23,8 +23,8 @@ body {
 }
 
 #prof {
-    width: 346px;
-    height: 518px;
+    width: 85%;
+    height: 85%;
     float: left;
     border-radius: 40px 40px 40px 40px;
     border: solid;
@@ -52,10 +52,11 @@ body {
 
 .middle {
     padding: 0% 3% 5% 0%;
+    margin: 0% 0% 0% 5%;
 }
 
 .right {
-    padding: 0% 3% 5% 0%;
+    padding: 0% 0% 5% 3%;
 }
 
 .job {
